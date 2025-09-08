@@ -4,7 +4,7 @@
   }
   nav ul {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: left;
   }
   nav li {
     margin: 0;
@@ -27,8 +27,8 @@
     margin-right: 1rem;
   }
   .photo {
-    min-width: 250px;
-    max-width: 320px;
+    min-width: 100px;
+    max-width: 100px;
     margin-left: 0;
   }
   .course-list {

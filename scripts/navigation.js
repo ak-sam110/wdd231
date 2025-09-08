@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', function () {
   // Hide nav when resizing to large screen
   window.addEventListener('resize', function () {
     if (window.innerWidth >= 700) {
-      nav.style.display = 'block';
-      menuBtn.setAttribute('aria-expanded', 'false');
+      nav.style.display = 'inline';
+      menuBtn.setAttribute('aria-expanded', 'true');
     } else {
-      nav.style.display = 'none';
+      nav.style.display = 'block';
     }
   });
 
