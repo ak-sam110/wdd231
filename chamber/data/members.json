@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Nigeria Breweries",
+    "address": "23 Airport Road, Oyo State, Ibadan",
+    "phone": "+234 651-321-5219",
+    "website": "https://directory.org.ng/listcompany-breweries?in=oyo",
+    "image": "brew.jpg",
+    "level": 3,
+    "description": "Africana Breweries Limited."
+  },
+  {
+    "name":"Novel Solar",
+    "address": "76 Adekunle Fajuyi Rd, Ibadan",
+    "phone": "+234 326-155-0621",
+    "website": "https://novelsolar.com/",
+    "image": "novel.png",
+    "level": 2,
+    "description":"Novel Solar for brighter life."
+  },
+  {
+    "name": "Ilaji Resort",
+    "address": "5 Oasis Area, Underbrigex, Oyo State",
+    "phone": "+234 355-103-2936",
+    "website": "https://ilajiresort.ng/",
+    "image": "ilaji.png",
+    "level": 1,
+    "description": "Haven of Hospitality and Fitness."
+  },
+  {
+    "name": "SQI College of ICT",
+    "address": "Opposite Central Bank, Ibadan",
+    "phone": "+234 906-994-5488",
+    "website": "https://sqi.edu.ng/",
+    "image": "sqi.jpg",
+    "level": 2,
+    "description": "ICT College to be a global talent."
+  },
+  {
+    "name": "Bolt Logistics",
+    "address": "65 Challenge, Oyo State",
+    "phone": "+234 435-567-4531",
+    "website": "https://bolt.eu/en/rides/",
+    "image": "Bolt.png",
+    "level": 1,
+    "description": "Delivering across the state."
+  },
+  {
+    "name": "Ace Supermarket",
+    "address": "Akobo Rd, Ibadan, Oyo State",
+    "phone": "+234 275-100-6253",
+    "website": "https://acesupermarket.ng/",
+    "image": "ace.png",
+    "level": 3,
+    "description": "Serving your need."
+  },
+  {
+    "name": "Kings Guards",
+    "address": "10, Liberty Expressway Oyo State",
+    "phone": "+234 274-107-5674",
+    "website": "https://www.kingsguards.com/",
+    "image": "king.png",
+    "level": 2,
+    "description": "Be Secured anywhere."
+  }
+]
