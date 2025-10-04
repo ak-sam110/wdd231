@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oyo State Chamber Directory | Home</title>
+  <meta name="description" content="Welcome to Oyo State Chamber of Commerce! Join our community and discover local businesses, events, and more.">
+  <meta name="author" content="Samuel O. Akinbola">
+
+  <!-- Facebook OG -->
+  <meta property="og:title" content="oyo state chamber of Commerce">
+  <meta property="og:description" content="Join our community and discover local businesses, events, and more.">
+  <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
+  <meta property="og:url" content="https://yourdomain.com/index.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon"> 
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/home.css">
+    <script src="scripts/home.js"  defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="images/state.webp" alt="Oyo State Chamber of Commerce Logo" class="logo">
+      <span class="site-title">Oyo State Chamber of Commerce</span>
+    </div>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+      <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    </nav>
+    <div class="theme-toggle">
+      <button id="theme-switch" aria-label="Toggle Dark Mode"></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/sees.webp" alt="Hero image" class="hero-img">
+      <div class="hero-cta">
+        <a href="join.html" class="cta-btn">Join the Chamber</a>
+      </div>
+    </section>
+
+    <h1>Home</h1>
+    <div class="main-sections">
+      <section class="events">
+        <h2>Events</h2>
+        <div id="events-list">
+          <!-- Example event. Replace with dynamic events as needed -->
+          <p>publicity</p>
+        </div>
+      </section>
+      <section class="weather">
+        <h2>Current Weather</h2>
+        <div id="current-weather">
+          <!-- JS inserts weather info here -->
+        </div>
+      </section>
+      <section class="forecast">
+        <h2>Weather Forecast</h2>
+        <div id="weather-forecast">
+          <!-- JS inserts forecast info here -->
+        </div>
+      </section>
+    </div>
+
+    <section class="spotlights">
+      <h2>Business Spotlights</h2>
+      <div id="spotlight-members" class="spotlight-container">
+        <!-- JS inserts spotlight members here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <div>
+        <strong> Oyo State Chamber of Commerce</strong><br>
+        10 Secretariat, oyo state <br>
+        Ibadan, Nigeria<br>
+    
+        <a href="mailto:"mailto:info@oyostate.org"">info@oyostate.org</a><br>
+        (223) 555-2300
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="images/youtube.webp" alt="YouTube"></a>
+        <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
+        <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
+      </div>
+      <div class="footer-dev">
+        <span>SAMUEL 0. AKINBOLA </span> | WDD231 Class Project<br>
+        <span id="last-modified"> </span>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; <span id="copyright-year"></span> Oyo State Chamber of Commerce <br>
+       <span id="last-modified"></span>
+    </div>
+  </footer>
+</body>
+</html>
+
+
