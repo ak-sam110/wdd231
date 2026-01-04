@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sam Automobile Dealer — Contact</title>
+  <meta name="description" content="Contact Sam Automobile Dealer to schedule a test drive, request information, or get financing details." />
+  <meta name="author" content="Sam Automobile Dealer" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta property="og:title" content="Contact Sam Automobile Dealer" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Sam Automobile Dealer home">
+        <img src="assets/logo.svg" alt="Sam Automobile Dealer logo" class="logo" width="48" height="48"/>
+        <span class="brand-text">Sam Automobile Dealer</span>
+      </a>
+
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="../final" id="final-link">Final</a></li>
+          <li><a href="#" id="favorites-link">Favorites (<span id="fav-count">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-main">
+    <h1>Contact Sam Automobile Dealer</h1>
+    <p>Fill out the form below and we will get back to you within one business day.</p>
+
+    <form id="contact-form" action="contact-action.html" method="get" class="contact-form" novalidate>
+      <fieldset>
+        <legend>Contact information</legend>
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="phone">Phone (optional)</label>
+        <input id="phone" name="phone" type="tel" />
+
+        <label for="interest">Interested in (enter vehicle id or description)</label>
+        <input id="interest" name="interest" type="text" placeholder="e.g., Toyota Camry or id: car-005" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Message</legend>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit" class="btn primary">Send</button>
+        <button type="reset" class="btn">Reset</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Sam Automobile Dealer. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

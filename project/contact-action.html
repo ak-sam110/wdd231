@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Contact Submitted — Sam Automobile Dealer</title>
+  <meta name="description" content="Confirmation page showing submitted contact form details for Sam Automobile Dealer." />
+  <meta name="author" content="Sam Automobile Dealer" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Sam Automobile Dealer home">
+        <img src="assets/logo.svg" alt="Sam Automobile Dealer logo" class="logo" width="48" height="48"/>
+        <span class="brand-text">Sam Automobile Dealer</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact Submitted</h1>
+    <p>Thank you! Below are the details you submitted — we will contact you soon.</p>
+    <section id="form-results" class="form-results" aria-live="polite">
+      <!-- JS populates submitted data -->
+    </section>
+
+    <p><a class="btn" href="index.html">Return to Home</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Sam Automobile Dealer. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Read query parameters (form submitted with method="get")
+    const params = new URLSearchParams(window.location.search);
+    const output = document.getElementById('form-results');
+    if (!params.toString()) {
+      output.innerHTML = '<p>No data received. If you submitted the form with POST, the static page cannot show it. Please resubmit using the contact form (GET).</p>';
+    } else {
+      // Display each field
+      const entries = Array.from(params.entries());
+      const list = document.createElement('dl');
+      entries.forEach(([k, v]) => {
+        const dt = document.createElement('dt');
+        dt.textContent = k;
+        const dd = document.createElement('dd');
+        dd.textContent = v || '(empty)';
+        list.appendChild(dt);
+        list.appendChild(dd);
+      });
+      output.appendChild(list);
+
+      // store last contact in localStorage for quick recall
+      try {
+        localStorage.setItem('sam-last-contact', JSON.stringify(Object.fromEntries(entries)));
+      } catch (e) {
+        // ignore if storage unavailable
+      }
+    }
+  </script>
+</body>
+</html>

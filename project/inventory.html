@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sam Automobile Dealer — Inventory</title>
+  <meta name="description" content="Full inventory listing at Sam Automobile Dealer. Filter, sort, and favorite vehicles. View detailed specs and request a test drive." />
+  <meta name="author" content="Sam Automobile Dealer" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sam Automobile Dealer — Inventory" />
+  <meta property="og:description" content="Explore our current inventory: inspected pre-owned and new vehicles with clear pricing." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Sam Automobile Dealer home">
+        <img src="assets/logo.svg" alt="Sam Automobile Dealer logo" class="logo" width="48" height="48"/>
+        <span class="brand-text">Sam Automobile Dealer</span>
+      </a>
+
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="inventory.html" class="active">Inventory</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="../final" id="final-link">Final</a></li>
+          <li><a href="#" id="favorites-link">Favorites (<span id="fav-count">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section aria-labelledby="inventory-heading" class="inventory-top">
+      <h1 id="inventory-heading">Inventory</h1>
+
+      <form id="filters" class="filters" aria-label="Inventory filters">
+        <div class="filter-group">
+          <label for="search">Search (make, model):</label>
+          <input id="search" name="search" type="search" placeholder="e.g., Toyota Corolla" />
+        </div>
+
+        <div class="filter-row">
+          <div class="filter-group">
+            <label for="min-price">Min price</label>
+            <input id="min-price" name="minPrice" type="number" min="0" step="100" />
+          </div>
+          <div class="filter-group">
+            <label for="max-price">Max price</label>
+            <input id="max-price" name="maxPrice" type="number" min="0" step="100" />
+          </div>
+          <div class="filter-group">
+            <label for="sort">Sort</label>
+            <select id="sort" name="sort">
+              <option value="relevance">Relevance</option>
+              <option value="price-asc">Price: low → high</option>
+              <option value="price-desc">Price: high → low</option>
+              <option value="year-desc">Year: newest</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-actions">
+          <button type="button" id="apply-filters" class="btn">Apply</button>
+          <button type="button" id="clear-filters" class="btn">Clear</button>
+        </div>
+      </form>
+    </section>
+
+    <section aria-labelledby="list-heading">
+      <h2 id="list-heading" class="visually-hidden">Vehicle Listing</h2>
+      <div id="inventory-list" class="cards-grid" aria-live="polite">
+        <!-- JS populates the 15+ items here -->
+      </div>
+
+      <p class="wayfinding">You are on: Inventory</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Sam Automobile Dealer. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="detail-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close details">&times;</button>
+      <div id="modal-body">
+        <!-- populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/inventory.js"></script>
+</body>
+</html>

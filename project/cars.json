@@ -1,0 +1,167 @@
+[
+  {
+    "id": "car-001",
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": 2019,
+    "price": 15900,
+    "mileage": 42000,
+    "color": "Silver",
+    "desc": "Reliable compact sedan with excellent fuel economy and recent service.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%23e9f0ff' width='400' height='200'/><text x='50%' y='50%' font-size='22' fill='%23033' text-anchor='middle' font-family='Arial' dy='.35em'>Toyota Corolla 2019</text></svg>"
+  },
+  {
+    "id": "car-002",
+    "make": "Honda",
+    "model": "Civic",
+    "year": 2020,
+    "price": 17500,
+    "mileage": 36000,
+    "color": "Blue",
+    "desc": "Sporty and efficient compact car with modern safety features.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%23e8f7ff' width='400' height='200'/><text x='50%' y='50%' font-size='22' fill='%23034' text-anchor='middle' font-family='Arial' dy='.35em'>Honda Civic 2020</text></svg>"
+  },
+  {
+    "id": "car-003",
+    "make": "Ford",
+    "model": "Escape",
+    "year": 2018,
+    "price": 13250,
+    "mileage": 60000,
+    "color": "Red",
+    "desc": "Compact SUV with roomy interior and towing package.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%23fff1f1' width='400' height='200'/><text x='50%' y='50%' font-size='22' fill='%23033' text-anchor='middle' font-family='Arial' dy='.35em'>Ford Escape 2018</text></svg>"
+  },
+  {
+    "id": "car-004",
+    "make": "Tesla",
+    "model": "Model 3",
+    "year": 2021,
+    "price": 34900,
+    "mileage": 18000,
+    "color": "White",
+    "desc": "All-electric with long-range battery and Autopilot features.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%23f3fff0' width='400' height='200'/><text x='50%' y='50%' font-size='22' fill='%23033' text-anchor='middle' font-family='Arial' dy='.35em'>Tesla Model 3 2021</text></svg>"
+  },
+  {
+    "id": "car-005",
+    "make": "Subaru",
+    "model": "Outback",
+    "year": 2017,
+    "price": 14950,
+    "mileage": 72000,
+    "color": "Green",
+    "desc": "Adventure-ready wagon with AWD and roof rails.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%23f0fff6' width='400' height='200'/><text x='50%' y='50%' font-size='20' fill='%23033' text-anchor='middle' font-family='Arial' dy='.35em'>Subaru Outback 2017</text></svg>"
+  },
+  {
+    "id": "car-006",
+    "make": "Chevrolet",
+    "model": "Malibu",
+    "year": 2016,
+    "price": 10200,
+    "mileage": 85000,
+    "color": "Black",
+    "desc": "Comfortable midsize sedan with a smooth ride and economical engine.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%23f6f6f9' width='400' height='200'/><text x='50%' y='50%' font-size='20' fill='%23033' text-anchor='middle' font-family='Arial' dy='.35em'>Chevy Malibu 2016</text></svg>"
+  },
+  {
+    "id": "car-007",
+    "make": "BMW",
+    "model": "320i",
+    "year": 2019,
+    "price": 22900,
+    "mileage": 40000,
+    "color": "Gray",
+    "desc": "Luxury sedan with turbocharged engine and premium interior.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%23f2f6ff' width='400' height='200'/><text x='50%' y='50%' font-size='20' fill='%23033' text-anchor='middle' font-family='Arial' dy='.35em'>BMW 320i 2019</text></svg>"
+  },
+  {
+    "id": "car-008",
+    "make": "Audi",
+    "model": "A4",
+    "year": 2018,
+    "price": 21400,
+    "mileage": 48000,
+    "color": "White",
+    "desc": "Compact luxury sedan known for refined handling.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%23fffaf0' width='400' height='200'/><text x='50%' y='50%' font-size='20' fill='%23033' text-anchor='middle' font-family='Arial' dy='.35em'>Audi A4 2018</text></svg>"
+  },
+  {
+    "id": "car-009",
+    "make": "Nissan",
+    "model": "Altima",
+    "year": 2020,
+    "price": 16900,
+    "mileage": 31000,
+    "color": "Silver",
+    "desc": "Comfortable family sedan with advanced driver aids.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%23f5f7ff' width='400' height='200'/><text x='50%' y='50%' font-size='20' fill='%23033' text-anchor='middle' font-family='Arial' dy='.35em'>Nissan Altima 2020</text></svg>"
+  },
+  {
+    "id": "car-010",
+    "make": "Hyundai",
+    "model": "Elantra",
+    "year": 2021,
+    "price": 16500,
+    "mileage": 21000,
+    "color": "Blue",
+    "desc": "Recent model with excellent warranty coverage and tech features.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%23eef9ff' width='400' height='200'/><text x='50%' y='50%' font-size='20' fill='%23033' text-anchor='middle' font-family='Arial' dy='.35em'>Hyundai Elantra 2021</text></svg>"
+  },
+  {
+    "id": "car-011",
+    "make": "Kia",
+    "model": "Soul",
+    "year": 2019,
+    "price": 14250,
+    "mileage": 39000,
+    "color": "Yellow",
+    "desc": "Fun and practical hatchback with unique styling.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%23fffbe9' width='400' height='200'/><text x='50%' y='50%' font-size='18' fill='%23033' text-anchor='middle' font-family='Arial' dy='.35em'>Kia Soul 2019</text></svg>"
+  },
+  {
+    "id": "car-012",
+    "make": "Volkswagen",
+    "model": "Golf",
+    "year": 2017,
+    "price": 11950,
+    "mileage": 92000,
+    "color": "Green",
+    "desc": "Practical hatchback with nimble handling and MPG efficiency.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%23f0fff9' width='400' height='200'/><text x='50%' y='50%' font-size='18' fill='%23033' text-anchor='middle' font-family='Arial' dy='.35em'>VW Golf 2017</text></svg>"
+  },
+  {
+    "id": "car-013",
+    "make": "Mercedes-Benz",
+    "model": "C300",
+    "year": 2018,
+    "price": 25900,
+    "mileage": 54000,
+    "color": "Black",
+    "desc": "Elegant luxury sedan with refined interior and powerful engine.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%23f7f7fb' width='400' height='200'/><text x='50%' y='50%' font-size='20' fill='%23033' text-anchor='middle' font-family='Arial' dy='.35em'>Mercedes C300 2018</text></svg>"
+  },
+  {
+    "id": "car-014",
+    "make": "Toyota",
+    "model": "RAV4",
+    "year": 2022,
+    "price": 28900,
+    "mileage": 8000,
+    "color": "Gray",
+    "desc": "Compact SUV with advanced safety and strong resale value.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%23f1f9ff' width='400' height='200'/><text x='50%' y='50%' font-size='20' fill='%23033' text-anchor='middle' font-family='Arial' dy='.35em'>Toyota RAV4 2022</text></svg>"
+  },
+  {
+    "id": "car-015",
+    "make": "Jeep",
+    "model": "Wrangler",
+    "year": 2015,
+    "price": 18900,
+    "mileage": 98000,
+    "color": "Orange",
+    "desc": "Iconic off-road vehicle with removable top and rugged capability.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%23fff4ed' width='400' height='200'/><text x='50%' y='50%' font-size='18' fill='%23033' text-anchor='middle' font-family='Arial' dy='.35em'>Jeep Wrangler 2015</text></svg>"
+  }
+]

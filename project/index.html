@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sam Automobile Dealer — Home</title>
+  <meta name="description" content="Sam Automobile Dealer — Quality pre-owned and new cars, transparent pricing, professional service. View our featured vehicles and contact us." />
+  <meta name="author" content="Sam Automobile Dealer" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sam Automobile Dealer — Trusted Cars" />
+  <meta property="og:description" content="Find your next car at Sam Automobile Dealer — reliable pre-owned and new inventory with transparent pricing." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/ak-sam110/wdd231/final" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="stylesheet" href="styles/project.css" />
+  
+  <script type="module" src="scripts/inventory.js"></script>
+  <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Sam Automobile Dealer home">
+        <img src="assets/logo.svg" alt="Sam Automobile Dealer logo" class="logo" width="48" height="48"/>
+        <span class="brand-text">Sam Automobile Dealer</span>
+      </a>
+
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="../final" id="final-link">Final</a></li>
+          <li><a href="#" id="favorites-link" aria-live="polite">Favorites (<span id="fav-count">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Drive Home with Confidence</h1>
+      <p class="lede">Sam Automobile Dealer provides inspected, certified pre-owned and new vehicles with transparent pricing and friendly service. Browse our curated inventory or contact us for a test drive.</p>
+      <p><a class="btn primary" href="inventory.html">Browse Inventory</a> <a class="btn" href="contact.html">Contact Sales</a></p>
+    </section>
+
+    <section class="featured" aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Featured Vehicles</h2>
+      <div id="featured-list" class="cards-grid" aria-live="polite">
+        <!-- JS populates featured vehicles (3 items) -->
+      </div>
+      <p class="wayfinding">You are on: Home › Featured Vehicles</p>
+    </section>
+
+    <section class="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">Why Sam Automobile Dealer?</h2>
+      <ul class="reason-list">
+        <li><strong>Transparent Pricing:</strong> Clear pricing with no hidden fees.</li>
+        <li><strong>Inspection:</strong> All vehicles pass multi-point inspections.</li>
+        <li><strong>Service:</strong> Personalized service and easy financing options.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Sam Automobile Dealer. All rights reserved.</p>
+      <p class="contact-small">1234 Main St, Anytown • Phone: (555) 123-4567 • Email: sales@samauto.example</p>
+    </div>
+  </footer>
+
+  <!-- Modal shared across pages -->
+  <div id="detail-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close details">&times;</button>
+      <div id="modal-body">
+        <!-- populated by JS -->
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+// favicon
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#0b6efd"/>
+  <g fill="#fff" transform="translate(8,8)">
+    <rect x="0" y="22" width="48" height="6" rx="3"/>
+    <path d="M6 20 L14 6 L34 6 L42 20 Z" />
+  </g>
+</svg>
+
+// logo.svg 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <rect width="96" height="96" rx="14" fill="#0b6efd"/>
+  <text x="50%" y="58%" text-anchor="middle" font-size="22" fill="#fff" font-family="Arial" font-weight="700">SAM</text>
+</svg>
