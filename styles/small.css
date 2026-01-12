@@ -12,6 +12,7 @@ body {
 }
 
 header {
+  display: grid;
   background: #171b22;
   color: #fff;
   padding: 0;
