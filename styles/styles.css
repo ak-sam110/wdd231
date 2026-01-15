@@ -28,8 +28,20 @@ header {
   padding: 0.5rem 0;
 }
 
+.hamburger {
+background: none;
+border: none;
+color: #3d4858;
+cursor: pointer;
+}
+
+.hamburger::after {
+content: "\2630";
+font-size:2rem;
+}
+
 .site-header {
-  display:flex ;
+  display:block ;
   align-items: center;
   padding: 0 var(--spacing);
 }
@@ -46,23 +58,24 @@ nav {
 
 .nav-menu {
   list-style: none;
-  display: flex;
+  display: inline-flex;
   padding: 0 var(--spacing);
   margin: 0;
   gap: 0.5rem;
 }
 
 .nav-menu li a {
+  display:- inline-block ;
   color: #fff;
   text-decoration: none;
   background: rgba(0,0,0,0.1);
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 0.3rem;
   border-radius: 4px;
   transition: transition  0.2s;
 }
 
 .nav-menu li a:hover,
-.nav-menu li a:focus {
+.nav-menu li a:focus  {
   background: #444;
 }
 

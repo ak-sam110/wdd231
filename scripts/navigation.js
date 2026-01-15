@@ -2,7 +2,14 @@
 document.addEventListener('DOMContentLoaded', function () {
   const menuBtn = document.getElementById('menuBtn');
   const nav = document.getElementById('primaryNav');
+  /* 
+   To store this element for hmburger
+   const navbutton = document.querySelector:("ham-btn");
+   navbutton.addEventListener('click',() =>{
+   navbutton.classList.toggle{"show"};
+});
 
+  */
   // Show/hide nav on mobile
   menuBtn.addEventListener('click', function () {
     const expanded = menuBtn.getAttribute('aria-expanded') === 'true';

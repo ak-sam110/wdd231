@@ -1,6 +1,6 @@
 @media (min-width: 700px) {
   nav {
-    display: block !important;
+    display: inline-block !important;
   }
   nav ul {
     flex-direction: row;
