@@ -7,28 +7,18 @@
    Responsive, accessible, and SEO optimized.">
    <meta name="author" content="Samuel Akinbola">
     <title>Prophets</title>
-    link rel="stylesheet" href="styles/styles.css"/>
-  <link rel="stylesheet" href="prophet.css"/>
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="prophet.css"/>
    <script src="scripts/prophets.js" defer> </script>
 </head>
-<body>
+
 <header>
     <h1> Latter-day prophet</h1>
 </header>
 <main>
-    const url = 'https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json';
     <div id="cards"></div>
-    const cards = document.querySelector('#cards');
-async function getProphetData() {
-    const response = await fetch(url);
-    const data = await response.json(); 
-    console.table(data.projects); // temporary testing of data response
-}
-
-getProphetData();    
 </main>
     
-</body>
 <footer>
     Akinbola Samuel Oluyemi | Latter-day Prophets
 </footer>
