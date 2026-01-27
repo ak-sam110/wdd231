@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join the chamber | Oyo State Chamber</title>
+    
+  <!-- Facebook OG -->
+  <meta property="og:title" content="oyo state chamber of Commerce">
+  <meta property="og:description" content="Join our community and discover local businesses, events, and more.">
+  <meta property="og:image" content="https://ak-sam110.github.io/wdd231/chamber/images/gov.jpg">
+  <meta property="og:url" content="https://ak-sam110.github.io/wdd231/chamber/index.html">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet"   href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon"> 
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/home.js"  defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+      <img src="images/state.webp" alt="Oyo State Chamber of Commerce Logo" class="logo">
+      <span class="site-title">Oyo State Chamber of Commerce</span>
+    </div>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" aria-current="page">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+      <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    </nav>
+    <div class="theme-toggle">
+      <button id="theme-switch" aria-label="Toggle Dark Mode"></button>
+    </div>
+    </header>
+    
+    <main>
+      <h1> Join the Oyo State Chamber of Commerce</h1>
+      <div class="form-cards-container">
+        <section class="=form-section" aria-labelledby="join-form-title">
+          <h2 id="join-form-title">Membership Application</h2>
+          <form method="get" action="thankyou.html" autocomplete="on">
+            <label title="Enter your first name" for="first-name">
+              First Name <span class="required-star">*</span>
+              <input type="text" id="first-name" name="firstName" title="Your first name" 
+              required
+              autocomplete="given-name"
+              minlength="1" />
+            </label>
+            <label title="Enter your last name" for="last.name">
+              Last Name <span class="required-star">*</span>
+              <input type="text" id="last-name" name="lastName" title="Your last name"
+              required
+              autocomplete="family-name"
+              minlength="1" /> 
+            </label>
+            <label title="Your orgamization title" for="org-title">
+              Organization Title 
+              <input type="text" id="org-title" name="orgTitle" title=" Your title in your Organization"
+              autocomplete="organization-title"
+              pattern="[A-za-z\-]{7,}"
+              placeholder="e.g. Executive Director" />
+            </label>
+            <label title="Enter your email address" for="email">
+              Email Address <span class="required-star">*</span>
+              <input type="email" id="email" name="email" title="Your email address"
+              required
+              autocomplete="email"
+              placeholder="e.g. you@example.org" />
+            </label>
+            <label title="Enter your mobile phone number" for="mobile">
+              Mobile Phone <span class="required-star">*</span>
+              <input type="tel" id="mobile" name="mobile" title="Your mobile Phone"
+              required
+              autocomplete="tel" />
+            </label>
+            <label title=" Business or Organization name" for="org-name">
+              Business/Organization Name <span class="required-star">*</span>
+              <input type="text" id="org-name" name="organization" title="Business or Organization name"
+              required
+              autocomplete="organization" />
+            </label>
+            <label title="Select membership level" for="membership-level">
+              Membership Level <span class="required-star">*</span>
+              <select id="membership-level" name="leve" title="Membership level required">
+                <option value="">-- Select Level --</option>
+                <option value="np"> NP Membership (Non Profit / $0)</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+              </select>
+            </label>
+            <label title="Short description of your business" for="org-desc">
+              Business/Organization Description 
+              <textarea id="org-desc" name="description" title="Business or Organization description"
+              autocomplete="=off"></textarea>
+            </label>
+            <!--Timestamp hidden input -->
+            <input type="hidden" id="formTimestamp" name="timestamp" value="">
+            <input class="submit-btn" type="submit" value="Apply for Membership">
+          </form>
+        </section>
+        <aside class="membership-cards" aria-label="Membership Levels">
+          <div class="membership-card" id="card-np">
+            <span class="title">NP Membership (Nonprofit)</span>
+            <p> No fee. For 501(c)(3) and community organization, <br> Core community benefits included.</p>
+            <a href="=modal-bronze" data-modal="modal-bronze" tabindex="0">Learn more</a>
+          </div>
+          <div class="membership-card" id="card-silver">
+            <span class="title"> Silver Membership</span>
+            <p>$300/year. Ideal for growing businesses.<br> Featured directory spotlights &amp; training invites.
+              <a href="#modal-silver" data-modal="modal-silver" tabindex="0"> Learn more</a>
+          </div>
+          <div class="membership-card" id="card-gold">
+            <span class="title"> Gold Membership </span>
+            <p>$750/year. Maximum exposure. <br>Premium advertising, VIP events, and homepage showcase. </p>
+            <a href="#modal-gold" data-modal="modal-gold" tabindex="0"> Learn more</a>
+          </div>
+        </aside>
+      </di>
+      <!--Membership Modals -->
+      <div class="modal" id="modal-np" aria-hidden="true" role="dialog" aria-modal="true" tabindex="-1">
+        <div class="modal-content">
+          <button class="close-btn" data-close-modal="modal-np" aria-label="Close modal">&times;</button>
+          <h3> NP Membership Benefits </h3>
+          <ul>
+            <li>Free membership for non-profits &amp; community orgs</li>
+            <li>Directory listing</li>
+            <li>Invitation to community events</li>
+            <li>Newsletter recognition</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal" id="modal-bronze" aria-hidden="true" role="dialog" aria-modal="true" tabindex="-1">
+        <div class="modal-content">
+          <button class="close-btn" data-close-modal="modal-bronze" aria-label="Close modal">&times;</button>
+          <h3> Bronze Membership Benefits </h3>
+          <ul>
+            <li>All NP benefits</li>
+            <li>Discounted event registration</li>
+            <li>Access to member trainings</li>
+            <li>Diretory badge</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal" id="modal-silver" aria-hidden="true" role="dialog" aria-modal="true" tabindex="-1">
+        <div class="modal-content">
+          <button class="close-btn" data-close-modal="modal-silver" aria-label="Close modal">&times;</button>
+          <h3> Silver Membership Benefits </h3>
+          <ul>
+            <li>All Bronze benefits</li>
+            <li>Business spotlight on homepage(rotating)</li>
+            <li>Priority event Invitations</li>
+            <li>Early access to trainings</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal" id="modal-gold" aria-hidden="true" role="dialog" aria-modal="true" tabindex="-1">
+        <div class="modal-content">
+          <button class="close-btn" data-close-modal="modal-gold" aria-label="Close modal">&times;</button>
+          <h3> Gold Membership Benefits </h3>
+          <ul>
+            <li>All Silver benefits</li>
+            <li>Featured banner ad on homepage</li>
+            <li>VIP business event access</li>
+            <li>Custom sponsorship opportunuties</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <!--Footer: reused across site-->
+    <footer>
+    <div class="footer-info">
+      <div>
+        <strong>Oyo State Chamber of Commerce</strong><br>
+        10 Secretariat <br>
+        Ibadan, Nigeria,264<br>
+        <a href="mailto:info@oyostate.org">info@oyostate.org</a><br>
+        (+234) 810-55672
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="images/youtube.webp" alt="YouTube"></a>
+        <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
+        <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
+      </div>
+      <div class="footer-dev">
+        <span>Akinbola Samuel Oluyemi</span> | WDD231 Chamber Project<br>
+        <span id="last-modified"></span>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; <span id="copyright-year"></span> Oyo State Chamber of Commerce | <a href="contact.html"> Contact</a> 
+    </div>
+      </div>
+    </footer>
+</body>
+</html>
