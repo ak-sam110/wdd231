@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Oyo State Chamber</title>
+    <meta name="description" content="Thank you for Joining Oyo State Chamber of Commerce! We assist and discover local businesses, events, and more.">
+    <meta name="author" content="Samuel O. Akinbola">
+    
+    <!-- Facebook OG -->
+  <meta property="og:title" content="oyo state chamber of Commerce">
+  <meta property="og:description" content="Join our community and discover local businesses, events, and more.">
+  <meta property="og:image" content="https://ak-sam110.github.io/wdd231/chamber/images/gov.jpg">
+  <meta property="og:url" content="https://ak-sam110.github.io/wdd231/chamber/index.html">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet"   href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon"> 
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/join.css">
+  <link rel="stylesheet" href="styles/thankyou.css">
+    <script src="scripts/home.js"  defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts//thankyou.js" defer></script>
+</head>
+<header>
+    <div>
+        <div class="logo-title">
+      <img src="images/state.webp" alt="Oyo State Chamber of Commerce Logo" class="logo">
+      <span class="site-title">Oyo State Chamber of Commerce</span>
+    </div>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" aria-current="page">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+      <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    </nav>
+    <div class="theme-toggle">
+      <button id="theme-switch" aria-label="Toggle Dark Mode"></button>
+    </div>
+    </div>
+</header>
+<body>
+    <main>
+    <div class="thankyou-container">
+      <h1>Thank You for Joining!</h1>
+      <p>We appreciate your interest in becoming a valued member. Below is a summary of your submission:</p>
+      <ul class="info-list">
+        <li>
+          <span class="info-label">First Name:</span>
+          <span class="info-value" id="fn"></span>
+        </li>
+        <li>
+          <span class="info-label">Last Name:</span>
+          <span class="info-value" id="ln"></span>
+        </li>
+        <li>
+          <span class="info-label">Email:</span>
+          <span class="info-value" id="mail"></span>
+        </li>
+        <li>
+          <span class="info-label">Phone:</span>
+          <span class="info-value" id="ph"></span>
+        </li>
+        <li>
+          <span class="info-label">Business/Organization:</span>
+          <span class="info-value" id="org"></span>
+        </li>
+        <li>
+          <span class="info-label">Submission Date:</span>
+          <span class="info-value" id="date"></span>
+        </li>
+      </ul>
+      <p>We will be in touch with additional details soon. <a href="index.html">Return to home page</a></p>
+    </div>
+    <section aria-label="Membership Levels" style="margin-top:2.2rem;">
+      <h2 class="sr-only">Membership Levels</h2>
+      <div class="membership-cards">
+        <div class="membership-card" id="c-np">
+          <span class="title">NP Membership (Nonprofit)</span>
+          <p>No fee for eligible 501(c)(3) and community organizations. Core community benefits included.</p>
+          <a href="#modal-np" data-modal="modal-np" tabindex="0">Learn more</a>
+        </div>
+        <div class="membership-card" id="c-bronze">
+          <span class="title">Bronze Membership</span>
+          <p>$100/year. For individuals and startups. Standard benefits plus event discounts.</p>
+          <a href="#modal-bronze" data-modal="modal-bronze" tabindex="0">Learn more</a>
+        </div>
+        <div class="membership-card" id="c-silver">
+          <span class="title">Silver Membership</span>
+          <p>$300/year. Ideal for growing businesses. Featured on homepage, invites to trainings.</p>
+          <a href="#modal-silver" data-modal="modal-silver" tabindex="0">Learn more</a>
+        </div>
+        <div class="membership-card" id="c-gold">
+          <span class="title">Gold Membership</span>
+          <p>$750/year. Maximum exposure. Homepage spotlight, VIP events, premium banner ads.</p>
+          <a href="#modal-gold" data-modal="modal-gold" tabindex="0">Learn more</a>
+        </div>
+      </div>
+    </section>
+    <!-- Membership Modals -->
+    <div class="modal" id="modal-np" aria-hidden="true" role="dialog" aria-modal="true" tabindex="-1">
+      <div class="modal-content">
+        <button class="close-btn" data-close-modal="modal-np" aria-label="Close modal">&times;</button>
+        <h3>NP Membership Benefits</h3>
+        <ul>
+          <li>Free listing for nonprofits/community organizations</li>
+          <li>Newsletter recognition</li>
+          <li>Invited to all community events</li>
+          <li>Basic member promotion</li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal" id="modal-bronze" aria-hidden="true" role="dialog" aria-modal="true" tabindex="-1">
+      <div class="modal-content">
+        <button class="close-btn" data-close-modal="modal-bronze" aria-label="Close modal">&times;</button>
+        <h3>Bronze Membership Benefits</h3>
+        <ul>
+          <li>All NP benefits</li>
+          <li>Discounted event registration</li>
+          <li>Access to member-focused training</li>
+          <li>Highlighted in the directory</li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal" id="modal-silver" aria-hidden="true" role="dialog" aria-modal="true" tabindex="-1">
+      <div class="modal-content">
+        <button class="close-btn" data-close-modal="modal-silver" aria-label="Close modal">&times;</button>
+        <h3>Silver Membership Benefits</h3>
+        <ul>
+          <li>All Bronze benefits</li>
+          <li>Homepage business spotlight (rotating)</li>
+          <li>Priority event invitations</li>
+          <li>Early access to training</li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal" id="modal-gold" aria-hidden="true" role="dialog" aria-modal="true" tabindex="-1">
+      <div class="modal-content">
+        <button class="close-btn" data-close-modal="modal-gold" aria-label="Close modal">&times;</button>
+        <h3>Gold Membership Benefits</h3>
+        <ul>
+          <li>All Silver benefits</li>
+          <li>Premium homepage banner ad</li>
+          <li>VIP business event access</li>
+          <li>Custom sponsorships</li>
+        </ul>
+      </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footer-info">
+      <div>
+        <strong>Oyo State Chamber of Commerce</strong><br>
+        10 Secretariat <br>
+        Ibadan, Nigeria,264<br>
+        <a href="mailto:info@oyostate.org">info@oyostate.org</a><br>
+        (+234) 810-55672
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="images/youtube.webp" alt="YouTube"></a>
+        <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
+        <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
+      </div>
+      <div class="footer-dev">
+        <span>Akinbola Samuel Oluyemi</span> | WDD231 Chamber Project<br>
+        <span id="last-modified"></span>
+      </div>
+    </div>
+        <div class="copyright">
+            &copy; <span id="copyright-year"></span> Oyo State Chamber of Commerce | <a href="contact.html"> Contact</a> 
+        </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -79,3 +79,4 @@ window.addEventListener('DOMContentLoaded', loadMembers);
 document.getElementById('menu-toggle').addEventListener('click', () => {
   document.querySelector('#main-nav ul').classList.toggle('open');
 });
+
