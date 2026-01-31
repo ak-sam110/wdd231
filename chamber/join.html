@@ -52,33 +52,40 @@
         <section class="=form-section" aria-labelledby="join-form-title">
           <h2 id="join-form-title">Membership Application</h2>
           <form method="get" action="thankyou.html" autocomplete="on">
-            <label title="Enter your first name" for="first-name">
-              First Name <span class="required-star">*</span>
+            <label title="Enter your first name" for="first-name">First Name 
+              <span class="required-star">*</span>
               <input type="text" id="first-name" name="firstName" title="Your first name" 
               required autocomplete="given-name" minlength="1"/> 
             </label>
-            <label title="Enter your last name" for="last.name">
-              Last Name <span class="required-star">*</span>
+
+            <label title="Enter your last name" for="last-name">Last Name
+              <span class="required-star">*</span>
               <input type="text" id="last-name" name="lastName" title="Your last name"
               required autocomplete="family-name" minlength="1"/> 
             </label>
+
             <label title="Your orgamization title" for="org-title"> Organization Title 
               <input type="text" id="org-title" name="orgTitle" title=" Your title in your Organization"
               autocomplete="organization-title" pattern="[A-za-z\-]{7,}" placeholder="e.g. Executive-Director"/>
             </label>
-            <label title="Enter your email address" for="email">
-              Email Address <span class="required-star">*</span>
+
+            <label title="Enter your email address" for="email"> Email Address 
+              <span class="required-star">*</span>
               <input type="email" id="email" name="email" title="Your email address" 
-              required autocomplete="email" placeholder="e.g. you@example.org"/>
+              required autocomplete="email" placeholder="e.g. you@example.org">
             </label>
+
             <label title="Enter your mobile phone number" for="mobile">
               Mobile Phone <span class="required-star">*</span>
-              <input type="tel" id="mobile" name="mobile" title="Your mobile Phone" required autocomplete="tel" />
+              <input type="tel" id="mobile" name="mobile" 
+              title="Your mobile Phone" required autocomplete="tel">
             </label>
+
             <label title=" Business or Organization name" for="org-name">
-              Business/Organization Name <span class="required-star">*</span>
+              Business/Organization Name 
+              <span class="required-star">*</span>
               <input type="text" id="org-name" name="organization" title="Business or Organization name"
-              required autocomplete="organization" />
+              required autocomplete="organization">
             </label>
             <label title="Select membership level" for="membership-level">
               Membership Level <span class="required-star">*</span>
@@ -93,7 +100,7 @@
             <label title="Short description of your business" for="org-desc">
               Business/Organization Description 
               <textarea id="org-desc" name="description" title="Business or Organization description"
-              autocomplete="=off"></textarea>
+              autocomplete="off"></textarea>
             </label>
             <!--Timestamp hidden input -->
             <input type="hidden" id="formTimestamp" name="timestamp" value="">
@@ -104,7 +111,7 @@
           <div class="membership-card" id="card-np">
             <span class="title">NP Membership (Nonprofit)</span>
             <p> No fee. For 501(c)(3) and community organization, <br> Core community benefits included.</p>
-            <a href="#modal-NP Membership" data-modal="modal-NP Membership" tabindex="0">Learn more</a>
+            <a href="#modal-NPmembership" data-modal="modal-NPmembership" tabindex="0">Learn more</a>
           </div>
 
           <div class="membership-card" id="card-bronze">
@@ -194,11 +201,11 @@
               <span>Akinbola Samuel Oluyemi</span> | WDD231 Chamber Project<br>
               <span id="last-modified"></span>
             </div>
+            </div>
+              <div class="copyright">
+                &copy; <span id="copyright-year"></span> Oyo State Chamber of Commerce | <a href="contact.html"> Contact</a> 
+              </div>
           </div>
-          <div class="copyright">
-            &copy; <span id="copyright-year"></span> Oyo State Chamber of Commerce | <a href="contact.html"> Contact</a> 
-          </div>
-        </div>
-    </footer>
+      </footer>
   </body>
 </html>
