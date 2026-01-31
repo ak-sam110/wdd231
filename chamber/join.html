@@ -55,42 +55,30 @@
             <label title="Enter your first name" for="first-name">
               First Name <span class="required-star">*</span>
               <input type="text" id="first-name" name="firstName" title="Your first name" 
-              required
-              autocomplete="given-name"
-              minlength="1" />
+              required autocomplete="given-name" minlength="1"/> 
             </label>
             <label title="Enter your last name" for="last.name">
               Last Name <span class="required-star">*</span>
               <input type="text" id="last-name" name="lastName" title="Your last name"
-              required
-              autocomplete="family-name"
-              minlength="1" /> 
+              required autocomplete="family-name" minlength="1"/> 
             </label>
-            <label title="Your orgamization title" for="org-title">
-              Organization Title 
+            <label title="Your orgamization title" for="org-title"> Organization Title 
               <input type="text" id="org-title" name="orgTitle" title=" Your title in your Organization"
-              autocomplete="organization-title"
-              pattern="[A-za-z\-]{7,}"
-              placeholder="e.g. Executive-Director"/>
+              autocomplete="organization-title" pattern="[A-za-z\-]{7,}" placeholder="e.g. Executive-Director"/>
             </label>
             <label title="Enter your email address" for="email">
               Email Address <span class="required-star">*</span>
-              <input type="email" id="email" name="email" title="Your email address"
-              required
-              autocomplete="email"
-              placeholder="e.g. you@example.org" />
+              <input type="email" id="email" name="email" title="Your email address" 
+              required autocomplete="email" placeholder="e.g. you@example.org"/>
             </label>
             <label title="Enter your mobile phone number" for="mobile">
               Mobile Phone <span class="required-star">*</span>
-              <input type="tel" id="mobile" name="mobile" title="Your mobile Phone"
-              required
-              autocomplete="tel" />
+              <input type="tel" id="mobile" name="mobile" title="Your mobile Phone" required autocomplete="tel" />
             </label>
             <label title=" Business or Organization name" for="org-name">
               Business/Organization Name <span class="required-star">*</span>
               <input type="text" id="org-name" name="organization" title="Business or Organization name"
-              required
-              autocomplete="organization" />
+              required autocomplete="organization" />
             </label>
             <label title="Select membership level" for="membership-level">
               Membership Level <span class="required-star">*</span>
@@ -116,8 +104,15 @@
           <div class="membership-card" id="card-np">
             <span class="title">NP Membership (Nonprofit)</span>
             <p> No fee. For 501(c)(3) and community organization, <br> Core community benefits included.</p>
-            <a href="#modal-bronze" data-modal="modal-bronze" tabindex="0">Learn more</a>
+            <a href="#modal-NP Membership" data-modal="modal-NP Membership" tabindex="0">Learn more</a>
           </div>
+
+          <div class="membership-card" id="card-bronze">
+            <span class="title"> Bronze Membership</span>
+            <p>$100/year. Ideal for startups businesses.<br> Featured sales spotlights &amp; check invites.
+              <a href="#modal-bronze" data-modal="modal-bronze" tabindex="0"> Learn more</a>
+          </div>
+
           <div class="membership-card" id="card-silver">
             <span class="title"> Silver Membership</span>
             <p>$300/year. Ideal for growing businesses.<br> Featured directory spotlights &amp; training invites.
@@ -181,29 +176,29 @@
       </div>
     </main>
     <!--Footer: reused across site-->
-    <footer>
-    <div class="footer-info">
-      <div>
-        <strong>Oyo State Chamber of Commerce</strong><br>
-        10 Secretariat <br>
-        Ibadan, Nigeria,264<br>
-        <a href="mailto:info@oyostate.org">info@oyostate.org</a><br>
-        (+234) 810-55672
-      </div>
-      <div class="footer-social">
-        <a href="#"><img src="images/youtube.webp" alt="YouTube"></a>
-        <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
-        <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
-      </div>
-      <div class="footer-dev">
-        <span>Akinbola Samuel Oluyemi</span> | WDD231 Chamber Project<br>
-        <span id="last-modified"></span>
-      </div>
-    </div>
-        <div class="copyright">
-        &copy; <span id="copyright-year"></span> Oyo State Chamber of Commerce | <a href="contact.html"> Contact</a> 
+      <footer>
+        <div class="footer-info">
+            <div>
+              <strong>Oyo State Chamber of Commerce</strong><br>
+              10 Secretariat <br>
+              Ibadan, Nigeria,264<br>
+              <a href="mailto:info@oyostate.org">info@oyostate.org</a><br>
+              (+234) 810-55672
+            </div>
+            <div class="footer-social">
+              <a href="#"><img src="images/youtube.webp" alt="YouTube"></a>
+              <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
+              <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
+            </div>
+            <div class="footer-dev">
+              <span>Akinbola Samuel Oluyemi</span> | WDD231 Chamber Project<br>
+              <span id="last-modified"></span>
+            </div>
+          </div>
+          <div class="copyright">
+            &copy; <span id="copyright-year"></span> Oyo State Chamber of Commerce | <a href="contact.html"> Contact</a> 
+          </div>
         </div>
-      </div>
     </footer>
   </body>
 </html>
