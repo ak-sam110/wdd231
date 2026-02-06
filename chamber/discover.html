@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script type="module" src="scripts/discover.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
 
 </head>
 <body>  
@@ -40,7 +40,7 @@
         <span class="site-title">Oyo State Chamber of Commerce</span>
     </div>
 
-    <nav id="main-nav" role="navigation" aria-label="Primary Navigation">
+    <nav id="main-nav" aria-label="Primary Navigation">
         <!-- Removed H1 from nav to keep a single main page heading -->
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -62,7 +62,7 @@
 
     <!-- Landmarked dynamic visit message - announce to assistive tech -->
     <section id="visit-message" aria-live="polite" aria-atomic="true"></section>
-
+    <h2 id="visit-heading" class="visually-hidden"></h2>
     <section class="discover-area" aria-label="Discover places and businesses">
       <!-- Cards will be injected here by JS -->
       <!-- Example of expected card structure (if you generate cards in JS use this pattern):
@@ -90,7 +90,7 @@
         (+234) 810-55672
       </div>
 
-      <div class="footer-social" aria-label="Social media links">
+      <div class="footer-social">
         <a href="#" aria-label="Visit our YouTube channel"><img src="images/youtube.webp" alt="YouTube" width="32" height="32"></a>
         <a href="#" aria-label="Visit our Twitter profile"><img src="images/twitter.jpg" alt="Twitter" width="32" height="32"></a>
         <a href="#" aria-label="Visit our LinkedIn profile"><img src="images/linkedin.jpg" alt="LinkedIn" width="32" height="32"></a>
