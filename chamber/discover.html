@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover Oyo State Chamberof Commerce | Oyo State Chamber</title>
+    <title>Discover Oyo State Chamber of Commerce | Oyo State Chamber</title>
     <meta name="description" content="Discover Oyo State Chamber of Commerce and enjoy our local businesses, events, tourists and many more.">
     <meta name="author" content="Samuel O. Akinbola">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ak-sam110.github.io/wdd231/chamber/index.html">
+    <meta name="theme-color" content="#3c7a89">
 
     <!-- Facebook OG -->
-    <meta property="og:title" content="oyo state chamber of Commerce">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Oyo State Chamber of Commerce">
     <meta property="og:description" content="Discover page of Oyo State Chamber of Commerce, enjoy our local businesses, events, tourists and many more">
     <meta property="og:image" content="https://ak-sam110.github.io/wdd231/chamber/images/gov.jpg">
     <meta property="og:url" content="https://ak-sam110.github.io/wdd231/chamber/index.html">
     <meta property="og:type" content="website">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"   href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
 
@@ -22,60 +26,85 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script type="module" src="scripts/discover.js"></script>
+    <script type="module" src="scripts/discover.js" defer></script>
+
 </head>
 <body>  
-<!-- Existing header content -->
-<header>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
     <div class="logo-title">
-        <img src="images/state.webp" alt="Oyo State Chamber of Commerce Logo" class="logo">
+        <!-- Provide intrinsic size and descriptive alt -->
+        <img src="images/state.webp" alt="Oyo State Chamber of Commerce Logo" class="logo" width="48" height="48">
         <span class="site-title">Oyo State Chamber of Commerce</span>
     </div>
-    <nav id="main-nav">
-        <h1>Welcome to Discover page</h1>
+
+    <nav id="main-nav" role="navigation" aria-label="Primary Navigation">
+        <!-- Removed H1 from nav to keep a single main page heading -->
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="discover.html" aria-current="page">Discover</a></li>
         </ul>
-            <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-        </nav>
-        <div class="theme-toggle">
-            <button id="theme-switch" aria-label="Toggle Dark Mode"></button>
-        </div>
-</header>
-      <!-- etc -->
-<main>
-    <section id="visit-message"></section>
-    <section class="discover-area">
+        <button id="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">&#9776;</button>
+    </nav>
+
+    <div class="theme-toggle">
+        <button id="theme-switch" aria-label="Toggle Dark Mode"></button>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <!-- Visible top-level heading (single H1) -->
+    <h1 class="page-title">Welcome to the Discover Page</h1>
+
+    <!-- Landmarked dynamic visit message - announce to assistive tech -->
+    <section id="visit-message" aria-live="polite" aria-atomic="true"></section>
+
+    <section class="discover-area" aria-label="Discover places and businesses">
       <!-- Cards will be injected here by JS -->
+      <!-- Example of expected card structure (if you generate cards in JS use this pattern):
+      <article class="card">
+        <figure>
+          <img src="images/place.jpg" alt="Short description of place" width="600" height="400">
+          <figcaption>Place name</figcaption>
+        </figure>
+        <h2>Place name</h2>
+        <address>Address text</address>
+        <p>Short description...</p>
+        <button aria-label="View details for Place name">View</button>
+      </article>
+      -->
     </section>
   </main>
+
   <footer>
-    <!-- Existing footer content -->
-     <!--Footer: reused across site-->
-            <div class="footer-info">
-                <div>
-                  <strong>Oyo State Chamber of Commerce</strong><br>
-                  10 Secretariat <br>
-                  Ibadan, Nigeria,264<br>
-                  <a href="mailto:info@oyostate.org">info@oyostate.org</a><br>
-                  (+234) 810-55672
-                </div>
-                <div class="footer-social">
-                  <a href="#"><img src="images/youtube.webp" alt="YouTube"></a>
-                  <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
-                  <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
-                </div>
-                <div class="footer-dev">
-                  <span>Akinbola Samuel Oluyemi</span> | WDD231 Chamber Project<br>
-                  <span id="last-modified"></span>
-                </div>
-            </div>
-              <div class="copyright">
-                &copy; <span id="copyright-year"></span> Oyo State Chamber of Commerce | <a href="contact.html"> Contact</a> 
-              </div>
+    <div class="footer-info">
+      <div>
+        <strong>Oyo State Chamber of Commerce</strong><br>
+        10 Secretariat <br>
+        Ibadan, Nigeria,264<br>
+        <a href="mailto:info@oyostate.org">info@oyostate.org</a><br>
+        (+234) 810-55672
+      </div>
+
+      <div class="footer-social" aria-label="Social media links">
+        <a href="#" aria-label="Visit our YouTube channel"><img src="images/youtube.webp" alt="YouTube" width="32" height="32"></a>
+        <a href="#" aria-label="Visit our Twitter profile"><img src="images/twitter.jpg" alt="Twitter" width="32" height="32"></a>
+        <a href="#" aria-label="Visit our LinkedIn profile"><img src="images/linkedin.jpg" alt="LinkedIn" width="32" height="32"></a>
+      </div>
+
+      <div class="footer-dev">
+        <span>Akinbola Samuel Oluyemi</span> | WDD231 Chamber Project<br>
+        <span id="last-modified"></span>
+      </div>
+    </div>
+
+    <div class="copyright">
+      &copy; <span id="copyright-year"></span> Oyo State Chamber of Commerce | <a href="contact.html">Contact</a> 
+    </div>
   </footer>
-  </body>
+</body>
 </html>
