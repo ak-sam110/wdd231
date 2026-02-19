@@ -17,7 +17,7 @@
   --shadow-lg: 0 2px 22px 0 rgba(51, 58, 85, 0.25);
 }
 
- /* GLOBAL STYLES */
+/* GLOBAL STYLES */
 
 * {
   box-sizing: border-box;
@@ -37,7 +37,7 @@ body {
   line-height: 1.6;
 }
 
-/*TYPOGRAPHY */
+/* TYPOGRAPHY */
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Barlow', Arial, sans-serif;
@@ -79,7 +79,7 @@ button {
   font-family: inherit;
 }
 
-/*HEADER & NAVIGATION*/
+/* HEADER & NAVIGATION */
 
 header {
   background-color: var(--nav-bg);
@@ -207,7 +207,7 @@ nav {
   }
 }
 
-/*HERO SECTION*/
+/* HERO SECTION */
 
 .hero {
   max-width: 1200px;
@@ -230,7 +230,7 @@ nav {
   }
 }
 
-/*MAIN CONTENT*/
+/* MAIN CONTENT */
 
 main {
   max-width: 900px;
@@ -238,7 +238,7 @@ main {
   padding: 0 1em;
 }
 
-/*TUTORIAL GRID LAYOUT*/
+/* TUTORIAL GRID LAYOUT */
 
 #tutorial-list {
   display: grid;
@@ -340,7 +340,7 @@ main {
   background-color: #e56a2a;
 }
 
-/*IMAGES*/
+/* IMAGES */
 
 img {
   max-width: 100%;
@@ -422,7 +422,7 @@ img[loading="lazy"].loaded {
   color: #ff6f3d;
 }
 
-/* FOOTER*/
+/* FOOTER */
 
 footer {
   background-color: var(--footer-bg);
