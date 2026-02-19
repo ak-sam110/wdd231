@@ -1,0 +1,167 @@
+[
+  {
+    "id": "1",
+    "title": "Beginner JavaScript",
+    "description": "Start learning JS with basic variables, loops, and functions.",
+    "difficulty": "Beginner",
+    "category": "JavaScript",
+    "length": "2 hours",
+    "img": "images/javascrpt.webp",
+    "author": "Sammy T.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+  },
+  {
+    "id": "2",
+    "title": "Responsive CSS Layout",
+    "description": "Learn flexbox and grid for mobile-first web apps.",
+    "difficulty": "Intermediate",
+    "category": "CSS",
+    "length": "2.5 hours",
+    "img": "images/css.webp",
+    "author": "A. Lee",
+    "link": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+  },
+  {
+    "id": "3",
+    "title": "Python Data Science",
+    "description": "Explore pandas and matplotlib for data analysis.",
+    "difficulty": "Intermediate",
+    "category": "Python",
+    "length": "3 hours",
+    "img": "images/python.webp",
+    "author": "J. Patel",
+    "link": "https://jupyter.org/"
+  },
+  {
+    "id": "4",
+    "title": "Building REST APIs",
+    "description": "Create RESTful web services using Node.js and Express.",
+    "difficulty": "Advanced",
+    "category": "Node.js",
+    "length": "3 hours",
+    "img": "images/api.webp",
+    "author": "D. Okafor",
+    "link": "https://expressjs.com/"
+  },
+  {
+    "id": "5",
+    "title": "Semantic HTML5",
+    "description": "Why semantic HTML matters for accessibility and SEO.",
+    "difficulty": "Beginner",
+    "category": "HTML",
+    "length": "1.5 hours",
+    "img": "images/HTML5.webp",
+    "author": "Sammy T.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+  },
+  {
+    "id": "6",
+    "title": "React Components",
+    "description": "Build dynamic, reusable React components and hooks.",
+    "difficulty": "Advanced",
+    "category": "React",
+    "length": "2 hours",
+    "img": "images/react.webp",
+    "author": "M. Doyle",
+    "link": "https://react.dev/"
+  },
+  {
+    "id": "7",
+    "title": "Git & GitHub Collaboration",
+    "description": "Version control and working in teams with Git.",
+    "difficulty": "Beginner",
+    "category": "Git",
+    "length": "1.3 hours",
+    "img": "images/git.webp",
+    "author": "Sammy T.",
+    "link": "https://github.com/"
+  },
+  {
+    "id": "8",
+    "title": "SQL Queries Essentials",
+    "description": "Selecting and joining tables with SQL.",
+    "difficulty": "Intermediate",
+    "category": "SQL",
+    "length": "2 hours",
+    "img": "images/sql.webp",
+    "author": "L. Chen",
+    "link": "https://sqlbolt.com/"
+  },
+  {
+    "id": "9",
+    "title": "API Authentication Methods",
+    "description": "Understand OAuth, JWT, and cookie/session auth.",
+    "difficulty": "Advanced",
+    "category": "APIs",
+    "length": "2.5 hours",
+    "img": "images/rest.webp",
+    "author": "D. Okafor",
+    "link": "https://jwt.io/"
+  },
+  {
+    "id": "10",
+    "title": "Accessibility in Web Apps",
+    "description": "Make your apps accessible for all users.",
+    "difficulty": "Intermediate",
+    "category": "Accessibility",
+    "length": "2 hours",
+    "img": "images/Web.webp",
+    "author": "Sammy T.",
+    "link": "https://www.w3.org/WAI/"
+  },
+  {
+    "id": "11",
+    "title": "DevOps Basics",
+    "description": "Intro to CI/CD pipelines and deployment.",
+    "difficulty": "Intermediate",
+    "category": "DevOps",
+    "length": "1 hour",
+    "img": "images/devop.webp",
+    "author": "A. Lee",
+    "link": "https://circleci.com/"
+  },
+  {
+    "id": "12",
+    "title": "TypeScript Fundamentals",
+    "description": "Learn types and interfaces to scale JS safely.",
+    "difficulty": "Intermediate",
+    "category": "TypeScript",
+    "length": "2.5 hours",
+    "img": "images/typescpt.webp",
+    "author": "M. Doyle",
+    "link": "https://www.typescriptlang.org/"
+  },
+  {
+    "id": "13",
+    "title": "Vue.js Quickstart",
+    "description": "Get started building apps with Vue.js.",
+    "difficulty": "Beginner",
+    "category": "Vue.js",
+    "length": "2 hours",
+    "img": "images/vue.webp",
+    "author": "L. Chen",
+    "link": "https://vuejs.org/"
+  },
+  {
+    "id": "14",
+    "title": "Bootstrap UI Design",
+    "description": "Rapid prototyping with responsive Bootstrap.",
+    "difficulty": "Beginner",
+    "category": "CSS",
+    "length": "1.5 hours",
+    "img": "images/bootstrap.webp",
+    "author": "J. Patel",
+    "link": "https://getbootstrap.com/"
+  },
+  {
+    "id": "15",
+    "title": "Algorithm Challenges",
+    "description": "Practice coding problems and solutions.",
+    "difficulty": "Advanced",
+    "category": "Algorithms",
+    "length": "2 hours",
+    "img": "images/algorthm.webp",
+    "author": "Sammy T.",
+    "link": "https://leetcode.com/"
+  }
+]

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sammy Tech Network - Home</title>
+  <meta name="description" content="Sammy Tech Network helps students and aspiring tech professionals advance their skills with tutorials, community forums, and mentorship.">
+  <meta name="author" content="Sammy Tech Team">
+  <link rel="icon" href="img/favico.ico" type="images/ico">
+  <meta property="og:title" content="Sammy Tech Network - Home">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ak-sam110.github.io/wdd231/finalproject/index.html">  
+  <meta property="og:image" content="https://ak-sam110.github.io/wdd231/finalproject/images/programmer.webp">
+  <meta property="og:description" content="Online platform for tech learning, collaboration, and career advancement.">
+  <link rel="stylesheet" href="styles/final.css">
+  <script type="module" src="scripts/app.js"></script>
+  <script type="module" src="scripts/tutorial.js"></script>
+</head>
+<body>
+<header>
+  <nav aria-label="Main Navigation">
+    <div class="logo">
+      <img src="images/mylogo.png" alt="Sammy Tech Network Logo" width="40" height="40">
+      <span class="logo-title">Sammy Tech Network</span>
+    </div>
+    <button class="hamburger" aria-label="Open navigation menu">&#9776;</button>
+    <div class="nav-links">
+      <a href="index.html" data-page="home" class="active">Home</a>
+      <a href="tutorial.html" data-page="tutorials">Tutorials</a>
+      <a href="network.html" data-page="network">Network</a>
+    </div>
+  </nav>
+  <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    </nav>
+    <div class="theme-toggle">
+      <button id="theme-switch" aria-label="Toggle Dark Mode"></button>
+</header>
+<main>
+  <h1>Welcome to Sammy Tech Network</h1>
+  <p>
+    Sammy Tech Network is your community for learning, career building, and connecting in technology.
+     We provide curated tutorials, networking opportunities, and mentorship to help you succeed.
+  </p>
+
+  <section class="hero">
+      <img src="images/network.webp" alt="Hero image" class="hero-img">
+    
+    <h2>Our Mission</h2>
+    <ul>
+      <li>Provide accessible tech resources for all skill levels.</li>
+      <li>Connect learners and mentors to grow together.</li>
+      <li>Foster networking and collaboration in tech.</li>
+      <li>Support career advancement with relevant opportunities.</li>
+    </ul>
+  </section>
+  <section aria-label="Learn More">
+    <a href="tutorial.html" class="btn btn-accent">Browse Tutorials</a>
+    <a href="network.html" class="btn btn-primary">Join Network</a>
+  </section>
+</main>
+
+<footer>
+    <div class="footer-info">
+      <div>
+        <strong> Sammy Tech Network </strong><br>
+        20 Challenge Area, oyo state <br>
+        Ibadan, Nigeria<br>
+    
+        <a href="mailto:info@sammytech.org">info@sammytech.org</a><br>
+        <a href="tel:+234-051-051-87893"> 📞 +7-996-438-5604 </a><br> 
+        <a href="#contact" class="contact-link"> 📋Contact Us</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Visit our YouTube channel"><img src="images/youtube.webp" alt="YouTube" width="32" height="32"></a>
+        <a href="#" aria-label="Visit our Twitter profile"><img src="images/twitter.jpg" alt="Twitter" width="32" height="32"></a>
+        <a href="#" aria-label="Visit our LinkedIn profile"><img src="images/linkedin.jpg" alt="LinkedIn" width="32" height="32"></a>
+      </div>
+      <div class="footer-dev">
+        <span>SAMUEL 0. AKINBOLA </span> | WDD231 Final Class Project<br>
+        <span id="last-modified"> </span>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; <span id="copyright-year"></span> Sammy Tech Network 
+    </div>
+</footer>
+
+<!-- Modal Structure -->
+<div id="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true" tabindex="-1">
+  <div class="modal-overlay"></div>
+  <div class="modal-content" role="document">
+    <button class="modal-close" aria-label="Close dialog">&times;</button>
+    <h2 class="modal-title" id="modal-title"></h2>
+    <div class="modal-body"></div>
+  </div>
+</div>
+
+</body>
+</html>

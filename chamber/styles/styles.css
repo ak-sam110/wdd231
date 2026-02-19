@@ -40,7 +40,8 @@ main {
   margin: auto;
 }
 .view-toggle { text-align: right; margin-bottom: 1rem; }
-.view-toggle button { margin-left: 0.5rem; padding: 0.5em 1em; border: none; border-radius: 5px; background: var(--secondary); color: var(--text); font-weight: bold; cursor: pointer; }
+.view-toggle button { margin-left: 0.5rem; padding: 0.5em 1em; border: none; border-radius: 5px; 
+  background: var(--secondary); color: var(--text); font-weight: bold; cursor: pointer; }
 .view-toggle .active { background: var(--primary); color: #fff; }
 
 #members.grid {
